@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1e32271d90872fe7"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="EVMX"
+		host="SNAPDM200"
+		rxversion="7.0.1.0"
+		osversion="Windows 7 Service Pack 1 32bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1920x1080"
+		timestamp="4/30/2018 16:49:25"
+		timestampiso="2018-04-30T13:49:25"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.067"
+			timeRelativeToTestModuleStartTime="00:00.067"
+			timeWallClock="16:49:25"
+			time="00:00.067"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'SnapXUntitled.Element94' at 339;16.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Snap-X - [Untitled]']/element[@controlid='94']"
+				fullname="WidthAndDistanceRepository.SnapXUntitled.Element94"
+				id="df190ddecc4440feb25475b746fe4644"
+				timeout="60000"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.032"
+			timeRelativeToTestModuleStartTime="00:01.032"
+			timeWallClock="16:49:26"
+			time="00:01.032"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{LMenu}'.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="86"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.238"
+			timeRelativeToTestModuleStartTime="00:01.238"
+			timeWallClock="16:49:26"
+			time="00:01.238"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'f'.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.448"
+			timeRelativeToTestModuleStartTime="00:01.448"
+			timeWallClock="16:49:26"
+			time="00:01.448"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'o'.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="94"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.650"
+			timeRelativeToTestModuleStartTime="00:01.650"
+			timeWallClock="16:49:26"
+			time="00:01.650"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="98"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.652"
+			timeRelativeToTestModuleStartTime="00:03.652"
+			timeWallClock="16:49:28"
+			time="00:03.652"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'D:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\Routine\Construct.mxy'.
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="101"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.185"
+			timeRelativeToTestModuleStartTime="00:11.185"
+			timeWallClock="16:49:36"
+			time="00:11.185"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Return}'.
+			</message>
+			<metainfo
+				itemindex="6"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="105"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.390"
+			timeRelativeToTestModuleStartTime="00:11.390"
+			timeWallClock="16:49:36"
+			time="00:11.390"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'SnapXUntitled.Element94' at 339;16.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Snap-X - [Untitled]']/element[@controlid='94']"
+				fullname="WidthAndDistanceRepository.SnapXUntitled.Element94"
+				id="df190ddecc4440feb25475b746fe4644"
+				timeout="60000"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="109"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.799"
+			timeRelativeToTestModuleStartTime="00:12.799"
+			timeWallClock="16:49:37"
+			time="00:12.799"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{LMenu}'.
+			</message>
+			<metainfo
+				itemindex="8"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="113"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.003"
+			timeRelativeToTestModuleStartTime="00:13.003"
+			timeWallClock="16:49:38"
+			time="00:13.003"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'f'.
+			</message>
+			<metainfo
+				itemindex="9"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="117"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.209"
+			timeRelativeToTestModuleStartTime="00:13.209"
+			timeWallClock="16:49:38"
+			time="00:13.209"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'r'.
+			</message>
+			<metainfo
+				itemindex="10"
+				codefile="d:\Joro\GIT_Automations\VERSION 3\AutomationMathOne\WidthAndDistance\WidthAndDistance\Recording1.cs"
+				codeline="121"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="WidthAndDistance"
+      id="236716ac-688a-4c0a-bb35-4cb5bf4fbf85"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="WidthAndDistance"
+      id="236716ac-688a-4c0a-bb35-4cb5bf4fbf85"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
