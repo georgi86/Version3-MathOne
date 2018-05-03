@@ -152,9 +152,15 @@ namespace WidthAndDistance
             Keyboard.Press("n");
             Thread.Sleep(100);
 
+            string strConstructValues = "D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\ActualValues.STA";
+            string strHardcodedValues = "D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\HardcodedValues.STA";
+
+            UtilityRun.ConstructCalculations(strConstructValues, strHardcodedValues);
+            Thread.Sleep(300);        
+
 
             //create a UtilityFunction.cs to add the folowing things
-             
+
             //add a code to read the date from the file////
 
 

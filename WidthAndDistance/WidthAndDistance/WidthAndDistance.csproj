@@ -85,6 +85,7 @@
       <UserCode>true</UserCode>
       <id>eca5d930-3bc4-4a3d-9b8f-c3b5ff7533c8</id>
     </Compile>
+    <Compile Include="UtilityFunctions.cs" />
     <Compile Include="WidthAndDistanceRepository.cs">
       <BoundTo>467d65c5-5a3b-4d69-b875-d9bd73697bba</BoundTo>
       <DependentUpon>WidthAndDistanceRepository.rxrep</DependentUpon>
