@@ -79,6 +79,31 @@ namespace WidthAndDistance
 
             Init();
 
+            string strBigModetext = "Measure";
+
+            bool bBigMode = true;
+
+            try
+            {
+                Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXUntitled.TextMeasure' at Center.", repo.SnapXUntitled.TextMeasureInfo, new RecordItemIndex(1));
+                repo.SnapXUntitled.TextMeasure.MoveTo();
+                Delay.Milliseconds(200);
+
+                bBigMode = repo.SnapXUntitled.TextMeasure.TextValue.CompareTo(strBigModetext) == 0 && repo.SnapXUntitled.TextMeasure.Visible;
+                               
+            }
+            catch (Exception ex)
+            {                
+          
+            }
+
+            if (!bBigMode)
+
+                repo.SnapXUntitled.SwitchToSensor.Click();
+                Delay.Milliseconds(200);                 
+            
+            
+
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXUntitled.TitleBar' at 339;16.", repo.SnapXUntitled.TitleBarInfo, new RecordItemIndex(0));
             repo.SnapXUntitled.TitleBar.Click("339;16");
             Thread.Sleep(200);
@@ -92,20 +117,20 @@ namespace WidthAndDistance
             Thread.Sleep(100);
 
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'o'.", new RecordItemIndex(3));
-            Keyboard.Press("o");           
+            Keyboard.Press("o");
 
             Thread.Sleep(3000);
-            
+
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Routine\\Construct.mxy'.", new RecordItemIndex(5));
             Keyboard.Press("D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Routine\\Construct.mxy");
-            Delay.Milliseconds(0);
-            
+            Thread.Sleep(100);
+
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(6));
             Keyboard.Press("{Return}");
             Thread.Sleep(100);
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXUntitled.TitleBar' at 339;16.", repo.SnapXUntitled.TitleBarInfo, new RecordItemIndex(7));
-            repo.SnapXUntitled.TitleBar.Click("339;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXUntitled.TitleBar' at Center.", repo.SnapXUntitled.TitleBarInfo, new RecordItemIndex(7));
+            repo.SnapXUntitled.TitleBar.Click();
             Thread.Sleep(200);
 
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LMenu}'.", new RecordItemIndex(8));
@@ -156,18 +181,12 @@ namespace WidthAndDistance
             string strHardcodedValues = "D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\HardcodedValues.STA";
 
             UtilityRun.ConstructCalculations(strConstructValues, strHardcodedValues);
-            Thread.Sleep(300);        
-
-
-            //create a UtilityFunction.cs to add the folowing things
-
-            //add a code to read the date from the file////
-
+            Thread.Sleep(300);
 
         }
 
-#region Image Feature Data
-#endregion
+        #region Image Feature Data
+        #endregion
     }
 #pragma warning restore 0436
 }

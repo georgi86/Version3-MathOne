@@ -87,7 +87,9 @@ namespace WidthAndDistance
         {
             RepoItemInfo _titlebarInfo;
             RepoItemInfo _finishInfo;
-            //RepoItemInfo _buttonokInfo;
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _switchtosensorInfo;
+            RepoItemInfo _textmeasureInfo;
 
             /// <summary>
             /// Creates a new SnapXUntitled  folder.
@@ -97,7 +99,9 @@ namespace WidthAndDistance
             {
                 _titlebarInfo = new RepoItemInfo(this, "TitleBar", "element[@controlid='94']", 600000, null, "df190dde-cc44-40fe-b254-75b746fe4644");
                 _finishInfo = new RepoItemInfo(this, "Finish", "container[@controlid='59648']/form//button[@text='Finish' and @enabled='True']", 600000, null, "2929854b-a65c-454d-9786-d7e3a4c5a3f7");
-                //_buttonokInfo = new RepoItemInfo(this, "ButtonOK", "container[@controlid='59648']/form//button[@text='&OK']", 600000, null, "3b5b15d3-1337-46bc-9a08-9ae085b9db9d");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "container[@controlid='59648']/form//button[@text='&OK']", 600000, null, "3b5b15d3-1337-46bc-9a08-9ae085b9db9d");
+                _switchtosensorInfo = new RepoItemInfo(this, "SwitchToSensor", "container[@controlid='59648']/form[@title='Untitled']/?/?/element[@controlid='59650']/element[@controlid='59648']/toolbar[@controlid='59392']/button[@commandid='40029']", 30000, null, "bff52809-980e-445c-9e81-9343bddce3cf");
+                _textmeasureInfo = new RepoItemInfo(this, "TextMeasure", "container[@controlid='59648']/form[@title='Untitled']//text[@controlid='2394']", 30000, null, "71ea4e7a-813e-481d-8d52-5b8db2388eef");
             }
 
             /// <summary>
@@ -175,26 +179,74 @@ namespace WidthAndDistance
             /// <summary>
             /// The ButtonOK item.
             /// </summary>
-            //[RepositoryItem("3b5b15d3-1337-46bc-9a08-9ae085b9db9d")]
-            //public virtual Ranorex.Button ButtonOK
-            //{
-            //    get
-            //    {
-            //        return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
-            //    }
-            //}
+            [RepositoryItem("3b5b15d3-1337-46bc-9a08-9ae085b9db9d")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
 
             /// <summary>
             /// The ButtonOK item info.
             /// </summary>
-            //[RepositoryItemInfo("3b5b15d3-1337-46bc-9a08-9ae085b9db9d")]
-            //public virtual RepoItemInfo ButtonOKInfo
-            //{
-            //    get
-            //    {
-            //        return _buttonokInfo;
-            //    }
-            //}
+            [RepositoryItemInfo("3b5b15d3-1337-46bc-9a08-9ae085b9db9d")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SwitchToSensor item.
+            /// </summary>
+            [RepositoryItem("bff52809-980e-445c-9e81-9343bddce3cf")]
+            public virtual Ranorex.Button SwitchToSensor
+            {
+                get
+                {
+                    return _switchtosensorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SwitchToSensor item info.
+            /// </summary>
+            [RepositoryItemInfo("bff52809-980e-445c-9e81-9343bddce3cf")]
+            public virtual RepoItemInfo SwitchToSensorInfo
+            {
+                get
+                {
+                    return _switchtosensorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextMeasure item.
+            /// </summary>
+            [RepositoryItem("71ea4e7a-813e-481d-8d52-5b8db2388eef")]
+            public virtual Ranorex.Text TextMeasure
+            {
+                get
+                {
+                    return _textmeasureInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextMeasure item info.
+            /// </summary>
+            [RepositoryItemInfo("71ea4e7a-813e-481d-8d52-5b8db2388eef")]
+            public virtual RepoItemInfo TextMeasureInfo
+            {
+                get
+                {
+                    return _textmeasureInfo;
+                }
+            }
         }
 
     }
