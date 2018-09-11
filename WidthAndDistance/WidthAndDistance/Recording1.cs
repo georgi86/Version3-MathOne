@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
+using System.IO;
 
 using Ranorex;
 using Ranorex.Core;
@@ -79,6 +80,11 @@ namespace WidthAndDistance
 
             Init();
 
+            if (File.Exists("C:\\JORO\\AUTOMATIONS\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\ActualVAlues.STA"))
+            {
+                File.Delete("C:\\JORO\\AUTOMATIONS\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\ActualVAlues.STA");
+            }
+
             string strBigModetext = "Measure";
 
             bool bBigMode = true;
@@ -121,9 +127,9 @@ namespace WidthAndDistance
 
             Thread.Sleep(3000);
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Routine\\Construct.mxy'.", new RecordItemIndex(5));
-            Keyboard.Press("D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Routine\\Construct.mxy");
-            Thread.Sleep(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'C:\\JORO\\AUTOMATIONS\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Routine\\Construct.mxy'.", new RecordItemIndex(5));
+            Keyboard.Press("C:\\JORO\\AUTOMATIONS\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Routine\\Construct.mxy");
+            Thread.Sleep(500);
 
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(6));
             Keyboard.Press("{Return}");
@@ -175,13 +181,17 @@ namespace WidthAndDistance
 
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'n'.", new RecordItemIndex(17));
             Keyboard.Press("n");
-            Thread.Sleep(100);
+            Thread.Sleep(200);
 
-            string strConstructValues = "D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\ActualValues.STA";
-            string strHardcodedValues = "D:\\Joro\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\HardcodedValues.STA";
+            string strConstructValues = "C:\\JORO\\AUTOMATIONS\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\ActualValues.STA";
+            string strHardcodedValues = "C:\\JORO\\AUTOMATIONS\\GIT_Automations\\VERSION 3\\AutomationMathOne\\Reports\\HardcodedValues.STA";
 
             UtilityRun.ConstructCalculations(strConstructValues, strHardcodedValues);
-            Thread.Sleep(300);
+            Thread.Sleep(1000);
+
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXUntitled.ButtonGo' at 55;155.", repo.SnapXUntitled.ButtonGoInfo, new RecordItemIndex(0));
+            repo.SnapXUntitled.ButtonGo.Click("55;155");
+            Delay.Milliseconds(200);
 
         }
 
